@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            border: 2px solid green;
+            
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box3{
+            width: 74vw;
+            height: 40vh;
+            margin-top: 30px;
+        }
+        #box1, #box2{
+            width: 35vw;
+            height: 30vh;
+        }
+        #box1{
+            background-color: aqua;
+        }
+        #box2{
+            background-color: rgb(12, 120, 221);
+        }
+        #box3{
+            background-color: rgb(153, 37, 236);
+        }
+        #box4{
+            background-color: rgb(236, 213, 7);
+        }
+        #box5{
+            background-color: rgb(235, 30, 98);
+        }
+        #box6{
+            background-color: rgb(198, 226, 54);
+        }
+        .first-container{
+            display: flex;
+            gap: 30px;
+        }
+        .second{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 38px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+            <div class="first-container">
+                <div class="box" id="box1"></div>
+                <div class="box" id="box2"></div>
+            </div>
+            <div class="box" id="box3"></div>
+        </div>
+        <div class="second">
+            <div class="box" id="box4"></div>
+            <div class="box" id="box5"></div>
+            <div class="box" id="box6"></div>
+        </div>
+    </div>
+</body>
+</html>
